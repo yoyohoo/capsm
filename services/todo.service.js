@@ -19,19 +19,20 @@ define(function (require, exports, module) {
 
     // 待办列表
     exports.getTodo = function (successCallback, errorCallback) {
-        this.get('', function (res) {
+        // this.get('http://192.168.6.237:9998/pending/queryFinish?operator=ZHANGZH', function (res) {
+        this.get('123', function (res) {
             successCallback(JSON.parse(res).resultList)
         }, function (err) {
             successCallback([{
-                uuid: 1,
-                title: '封闭性规则复核',
-                time: '06-15 17:14',
-                summary: '此处是待办事项展示内容...'
+                taskId: 1,
+                taskName: '封闭性规则复核',
+                submitDate: '06-15 17:14',
+                linkName: '此处是待办事项展示内容...'
             }, {
-                uuid: 2,
-                title: '封闭性规则复核2',
-                time: '06-15 17:14',
-                summary: '此处是待办事项展示内容...'
+                taskId: 2,
+                taskName: '封闭性规则复核2',
+                submitDate: '06-15 17:14',
+                linkName: '此处是待办事项展示内容...'
             }])
         })
     }
