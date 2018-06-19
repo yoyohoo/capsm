@@ -1,0 +1,17 @@
+.page {
+    bottom: 2.5rem;
+     /* top: 2.2rem;  */
+    height: auto;
+}
+
+#todo,
+#message,
+#monitor,
+#report {
+    -webkit-animation-duration: 0s;
+            animation-duration: 0s;
+}
+
+#settings {
+    background-color: #fff;
+}

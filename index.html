@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CAPSM</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="./css/sm.min.css">
+    <link rel="stylesheet" href="./css/sm-extend.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="page-group">
+
+        <!-- 待办 -->
+        <div id="todo" class="page back">
+            <header class="bar bar-nav">
+                <h1 class="title">待办事项</h1>
+                <a class="icon icon-settings pull-right open-panel"></a>
+            </header>
+
+            <div class="content">
+
+                <div class="content-block-title">我的待办事项</div>
+                <div class="list-block media-list inset">
+                    <ul>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="recheck" class="page">
+            <header class="bar bar-nav">
+                <a class="button button-link button-nav pull-left back" href="javascript:">
+                <span class="icon icon-left"></span>
+                返回
+                </a>
+                <h1 class="title">复核</h1>
+            </header>
+
+            <div class="content">
+                <div class="list-block">
+                    <ul>
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">付款账户类型</div>
+                                    <div class="item-input">
+                                        <input readonly type="text" placeholder="类型">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">付款账户信息</div>
+                                    <div class="item-input">
+                                        <input readonly type="text" placeholder="经纪_普通经纪">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">收款账户类型</div>
+                                    <div class="item-input">
+                                        <input readonly type="text" placeholder="单账户">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">收款账户信息</div>
+                                    <div class="item-input">
+                                        <input readonly type="text" placeholder="0120229838383/平安证券">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">付款是否报备</div>
+                                    <div class="item-input">
+                                        <input readonly type="text" placeholder="是">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">收款是否报备</div>
+                                    <div class="item-input">
+                                        <input readonly type="text" placeholder="否">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-name"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">支付方向</div>
+                                    <div class="item-input">
+                                        <input readonly type="text" placeholder="双向">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="align-top">
+                            <div class="item-content">
+                                <div class="item-media"><i class="icon icon-form-comment"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">备注</div>
+                                    <div class="item-input">
+                                        <textarea placeholder="请输入备注"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-block">
+                    <div class="row">
+                        <div class="col-50"><a href="#" class="button button-big button-fill button-danger">退回</a></div>
+                        <div class="col-50"><a href="#" class="button button-big button-fill button-success">同意</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 消息 -->
+        <div id="message" class="page">
+            <header class="bar bar-nav">
+                <h1 class="title">我的消息</h1>
+            </header>
+
+            <div class="content">
+
+                <div class="content-block-title">我的消息</div>
+                <div class="list-block media-list inset">
+                    <ul>
+                        <li>
+                            <a href="javascript:" class="item-link item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">警告提醒</div>
+                                        <div class="item-after">06-15 17:14</div>
+                                    </div>
+                                    <!-- <div class="item-subtitle">子标题</div> -->
+                                    <div class="item-text">【警告】【数据采集】证券融资融券系统数据采集失败，已发生一小时，请尽快处理！</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 监控 -->
+        <div id="monitor" class="page">
+            <header class="bar bar-nav">
+                <h1 class="title">监控</h1>
+            </header>
+            <div class="content">
+                监控内容
+            </div>
+
+        </div>
+
+        <!-- 报表 -->
+        <div id="report" class="page">
+            <header class="bar bar-nav">
+                <h1 class="title">报表</h1>
+            </header>
+            <div class="content">
+                报表内容
+            </div>
+
+        </div>
+
+        <!-- 工具栏 -->
+        <nav class="bar bar-tab">
+            <a data-id=1 name="todo" class="tab-item active" data-no-cache="true" href="javascript:">
+                <span class="icon icon-menu"></span>
+                <span class="tab-label">待办</span>
+            </a>
+            <a data-id=2 name="message" class="tab-item" data-no-cache="true" href="javascript:">
+                <span class="icon icon-message"></span>
+                <span class="tab-label">消息</span>
+            </a>
+            <a data-id=3 name="monitor" class="tab-item" data-no-cache="true" href="javascript:">
+                <span class="icon icon-computer"></span>
+                <span class="tab-label">监控</span>
+            </a>
+            <a data-id=4 name="report" class="tab-item" data-no-cache="true" href="javascript:">
+                <span class="icon icon-picture"></span>
+                <span class="tab-label">报表</span>
+            </a>
+        </nav>
+
+    </div>
+
+
+    <!-- popup, panel 遮罩层 -->
+    <div class="panel-overlay"></div>
+    <!-- 待办设置 -->
+    <div id="settings" class="panel panel-right panel-reveal">
+        <div class="content-block">
+            <p><a href="javascript:" class="close-panel"><span class="icon icon-home"></span>关闭</a>个人设置</p>
+            <p></p>
+            <!-- Click on link with "close-panel" class will close panel -->
+            <p></p>
+        </div>
+    </div>
+
+    <script src="./lib/sea.min.js"></script>
+    <script>
+        (function (sea) {
+            sea.config({
+                base: './',
+                alias: {
+                    Zepto: './lib/zepto.min',
+                    SM: './lib/sm.min',
+                    SMextend: './lib/sm-extend.min',
+                    Com: './lib/com',
+                    index: './modules/index'
+                },
+                vars: {
+                    locale: 'zh-cn'
+                },
+                preload: ['Zepto'],
+                debug: true
+            });
+            sea.use(['Zepto', 'SM', 'SMextend', 'Com', 'index'], function () {
+                sea.use('index');
+            });
+        })(seajs);
+    </script>
+</body>
+
+</html>
