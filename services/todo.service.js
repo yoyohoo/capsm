@@ -19,7 +19,7 @@ define(function (require, exports, module) {
 
     // 待办列表
     exports.getTodo = function (successCallback, errorCallback) {
-        this.get('http://192.168.6.237:9998/pending/queryFinish?operator=ZHANGZH', function (res) {
+        this.get('', function (res) {
             successCallback(JSON.parse(res).resultList)
         }, function (err) {
             successCallback([{
