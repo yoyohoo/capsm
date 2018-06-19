@@ -251,9 +251,9 @@
                 preload: ['Zepto'],
                 debug: true
             });
-            sea.use(['Zepto', 'SM', 'SMextend', 'Com', 'index'], function () {
-                sea.use('index');
-            });
+                   window.onload = function () {
+                sea.use(['Zepto', 'SM', 'SMextend', 'Com', 'index']);
+            }
         })(seajs);
     </script>
 </body>
