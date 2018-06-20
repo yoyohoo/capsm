@@ -149,13 +149,13 @@
         </div>
     </div>
 
+    <script src="./lib/zepto.min.js"></script>
     <script src="./lib/sea.min.js"></script>
     <script>
         (function (sea) {
             sea.config({
                 base: './',
                 alias: {
-                    Zepto: './lib/zepto',
                     SM: './lib/sm.min',
                     SMextend: './lib/sm-extend.min',
                     Com: './lib/com',
@@ -164,11 +164,11 @@
                 vars: {
                     locale: 'zh-cn'
                 },
-                preload: ['Zepto'],
-                debug: false
+                debug: true
             });
-            sea.use('Zepto');
-            sea.use(['SM', 'SMextend', 'Com', 'index']);
+            window.onload = function () {
+                sea.use(['SM', 'SMextend', 'Com', 'index']);
+            }
         })(seajs);
     </script>
 </body>
