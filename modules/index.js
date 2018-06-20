@@ -73,7 +73,7 @@ define(function (require, exports, module) {
             var checked = $(this).find('input')[0].checked,
                 msg = checked ? '开启通知' : '关闭通知';
             $.toast(msg);
-        })
+        },500)
     });
 
     // 监控
