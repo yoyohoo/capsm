@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
 
     this.mixins = {
-        name: 'todo',
+        id: 'todo',
         header: $(`#todo header .title`),
         el: $(`#todo .content ul`),
         ser: require('../services/todo.service'),
@@ -37,6 +37,7 @@ define(function (require, exports, module) {
 
     // 初始化
     exports.init = function () {
+        $.pageId = this.mixins.id;
         localStorage.setItem('tab', 'todo');
         this.mixins.render();
     }

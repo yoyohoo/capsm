@@ -116,19 +116,19 @@
 
         <!-- 工具栏 -->
         <nav id="footer" class="bar bar-tab">
-            <a data-id=1 name="todo" class="tab-item active" data-no-cache="true" href="javascript:">
+            <a name="todo" class="tab-item active" data-no-cache="true" href="javascript:">
                 <span class="icon icon-menu"></span>
                 <span class="tab-label">待办</span>
             </a>
-            <a data-id=2 name="message" class="tab-item" data-no-cache="true" href="javascript:">
+            <a name="message" class="tab-item" data-no-cache="true" href="javascript:">
                 <span class="icon icon-message"></span>
                 <span class="tab-label">消息</span>
             </a>
-            <a data-id=3 name="monitor" class="tab-item" data-no-cache="true" href="javascript:">
+            <a name="monitor" class="tab-item" data-no-cache="true" href="javascript:">
                 <span class="icon icon-computer"></span>
                 <span class="tab-label">监控</span>
             </a>
-            <a data-id=4 name="report" class="tab-item" data-no-cache="true" href="javascript:">
+            <a name="report" class="tab-item" data-no-cache="true" href="javascript:">
                 <span class="icon icon-picture"></span>
                 <span class="tab-label">报表</span>
             </a>
@@ -165,7 +165,7 @@
                     locale: 'zh-cn'
                 },
                 preload: ['Zepto'],
-                debug: false
+                debug: true
             });
             window.onload = function () {
                 sea.use(['Zepto', 'Com', 'SM', 'SMextend', 'index']);

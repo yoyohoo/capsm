@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
 
     this.mixins = {
-        name: 'message',
+        id: 'message',
         header: $(`#message header .title`),
         el: $(`#message .content ul`),
         ser: require('../services/message.service'),
@@ -48,6 +48,7 @@ define(function (require, exports, module) {
     }
 
     exports.init = function () {
+        $.pageId = this.mixins.id;
         this.mixins.render();
     }
 

@@ -1,7 +1,7 @@
 define(function (require, exports, module) {
 
     this.mixins = {
-        name: 'recheck',
+        id: 'recheck',
         header: $(`#recheck header .title`),
         el: $(`#recheck .content ul`),
         ser: require('../services/recheck.service'),
@@ -19,13 +19,11 @@ define(function (require, exports, module) {
     }
 
     function back() {
-        if (window.isEx)
-            $.router.load('#todo', true)
-        else
-            $.router.back();
+        $.router.back('#todo', true);
     }
 
     exports.init = function () {
+        $.pageId = this.mixins.id;
         this.mixins.header.parent().on('click', '.back', back);
         this.mixins.render();
     }

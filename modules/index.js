@@ -13,17 +13,8 @@ define(function (require, exports, module) {
     // 导航事件
     $(document).on('click', '#footer a',
         function () {
-            var idx = this.dataset.id,
-                last_idx = localStorage.getItem('tab_id');
-            if (idx === last_idx) return false;
             setActive($(this));
-            if (idx < last_idx) {
-                $(this).addClass('back');
-            } else {
-                $(this).removeClass('back');
-            }
             $.router.load(`#${this.name}`);
-            localStorage.setItem('tab_id', idx);
         });
 
     var todo = require('./todo.module'),
