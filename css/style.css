@@ -23,10 +23,6 @@
     color: red;
 }
 
-#settings {
-    background-color: #fff;
-}
-
 #monitor .tab ul .item-text {
     text-align: right;
     font-weight: bold;
@@ -43,4 +39,19 @@
 
 #monitor .tab ul .danger {
     color: red;
+}
+
+
+#settings {
+    background-color: #fff;
+}
+
+#settings p:nth-child(1){
+    text-align: center;
+}
+
+#settings .close-panel
+{
+    position: absolute;
+    left: 1rem;
 }

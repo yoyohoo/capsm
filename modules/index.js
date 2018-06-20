@@ -25,7 +25,7 @@ define(function (require, exports, module) {
             if (b)
                 $('#footer').show();
             else
-                $('#footer').hide();
+                $('#footer').css('display', 'none');
         },
         setActive = function (target) {
             var active = 'active';
@@ -39,14 +39,18 @@ define(function (require, exports, module) {
         switch (pageId) {
             case 'message':
                 message.init();
+                toggleBar(true)
                 break;
             case 'recheck':
+                toggleBar(false)
                 recheck.init();
                 break;
             case 'monitor':
+                toggleBar(true)
                 monitor.init();
                 break;
             default:
+                toggleBar(true)
                 todo.init();
                 break;
         }
@@ -61,6 +65,12 @@ define(function (require, exports, module) {
     });
     $(document).on('click', '#re-agree', function () {
         $.alert('复核成功！')
+    });
+
+    // 设置
+    $(document).on('click', '#settings .label-switch', function () {
+        var msg = $(this).find('input')[0].checked ? '关闭通知' : '开启通知';
+        $.toast(msg);
     });
 
     // 监控

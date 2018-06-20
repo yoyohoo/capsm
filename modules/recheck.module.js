@@ -18,13 +18,8 @@ define(function (require, exports, module) {
         }
     }
 
-    function back() {
-        $.router.back('#todo', true);
-    }
-
     exports.init = function () {
         $.pageId = this.mixins.id;
-        this.mixins.header.parent().on('click', '.back', back);
         this.mixins.render();
     }
 

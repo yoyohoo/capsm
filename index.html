@@ -35,7 +35,7 @@
 
         <div id="recheck" class="page">
             <header class="bar bar-nav">
-                <a class="button button-link button-nav pull-left back" href="javascript:">
+                <a class="button button-link button-nav pull-left back" href="#">
                 <span class="icon icon-left"></span>
                 返回
                 </a>
@@ -116,7 +116,7 @@
 
         <!-- 工具栏 -->
         <nav id="footer" class="bar bar-tab">
-            <a name="todo" class="tab-item active" data-no-cache="true" href="javascript:">
+            <a name="todo" class="tab-item active" data-no-cache="true" href="#todo">
                 <span class="icon icon-menu"></span>
                 <span class="tab-label">待办</span>
             </a>
@@ -142,10 +142,54 @@
     <!-- 待办设置 -->
     <div id="settings" class="panel panel-right panel-reveal">
         <div class="content-block">
-            <p><a href="javascript:" class="close-panel"><span class="icon icon-home"></span>关闭</a>个人设置</p>
-            <p></p>
-            <!-- Click on link with "close-panel" class will close panel -->
-            <p></p>
+            <p><a href="javascript:" class="close-panel"><span class="icon icon-close"></span>关闭</a> 个人设置</p>
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">接受复核提醒<i class="icon icon-form-toggle"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label"></div>
+                                <div class="item-input">
+                                    <label class="label-switch">
+                                        <input type="checkbox" checked>
+                                        <div class="checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">接受审批提醒<i class="icon icon-form-toggle"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label"></div>
+                                <div class="item-input">
+                                    <label class="label-switch">
+                                        <input type="checkbox" checked>
+                                        <div class="checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">开启消息通知<i class="icon icon-form-toggle"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label"></div>
+                                <div class="item-input">
+                                    <label class="label-switch">
+                                        <input type="checkbox">
+                                        <div class="checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
