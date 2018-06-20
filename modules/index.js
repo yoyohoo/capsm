@@ -69,8 +69,11 @@ define(function (require, exports, module) {
 
     // 设置
     $(document).on('click', '#settings .label-switch', function () {
-        var msg = $(this).find('input')[0].checked ? '开启通知' : '关闭通知';
-        $.toast(msg);
+        setTimeout(() => {
+            var checked = $(this).find('input')[0].checked,
+                msg = checked ? '开启通知' : '关闭通知';
+            $.toast(msg);
+        })
     });
 
     // 监控
