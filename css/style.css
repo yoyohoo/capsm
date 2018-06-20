@@ -12,6 +12,35 @@
             animation-duration: 0s;
 }
 
+#message .ms-deal span,
+#message .ms-undeal span {
+    position: absolute;
+    right: 0;
+    color: green;
+}
+
+#message .ms-undeal span {
+    color: red;
+}
+
 #settings {
     background-color: #fff;
+}
+
+#monitor .tab ul .item-text {
+    text-align: right;
+    font-weight: bold;
+    color: red;
+}
+
+#monitor .tab ul .normal {
+    color: green;
+}
+
+#monitor .tab ul .warning {
+    color: orangered;
+}
+
+#monitor .tab ul .danger {
+    color: red;
 }
