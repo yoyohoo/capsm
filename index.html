@@ -164,12 +164,11 @@
                 vars: {
                     locale: 'zh-cn'
                 },
-                //preload: ['Zepto'],
+                preload: ['Zepto'],
                 debug: false
             });
-            window.onload = function () {
-                sea.use(['Zepto', 'SM', 'SMextend', 'Com', 'index']);
-            }
+            sea.use('Zepto');
+            sea.use(['SM', 'SMextend', 'Com', 'index']);
         })(seajs);
     </script>
 </body>
