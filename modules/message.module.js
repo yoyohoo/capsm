@@ -11,7 +11,8 @@ define(function (require, exports, module) {
             var data = this.ser.getMessage();
             $.each(data, (index, item) => {
                 item.cls = item.dealed ? 'ms-deal' : 'ms-undeal';
-                var tpl = `<li><a class="${item.cls}" data-id="?uuid=${item.uuid}" href="javascript:" class="item-link item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">${item.title}</div><div class="item-after">${item.submitDate}</div></div><div class="item-text">${item.summary}<span>已处理</span></div></div></a></li>`;
+                item.state = item.dealed ? '已处理' : '未处理';
+                var tpl = `<li><a class="${item.cls}" data-id="?uuid=${item.uuid}" href="javascript:" class="item-link item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">${item.title}</div><div class="item-after">${item.submitDate}</div></div><div class="item-text">${item.summary}<span>${item.state}</span></div></div></a></li>`;
                 this.el.append(tpl);
             })
         }
